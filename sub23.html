@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פקל נפגעים למפקד-חטיבת ביסלח</title>
+  <link rel="stylesheet" href="subs.css">
+</head>
+<body>
+    <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
+    <img class="title" src="assets/elements/sub23.png" alt="icon 1">
+    <div class="infoBox">
+     <h2 id="boxTitle"></h2>
+     <p id="boxText"></p>
+    </div>
+
+
+     <img class="forword" src="assets/buttons/forword.png" alt="icon 1">
+    <img class="back" src="assets/buttons/back.png" alt="icon 1">
+
+       <div class="toSub" onclick="goTosub2()">
+    <img src="assets/buttons/backToSub2.png" alt="start button">
+  </div>
+      <div class="toMenu" onclick="gotoMenu()">
+    <img src="assets/buttons/toMenu.png" alt="start button">
+  </div>
+
+</body>
+<script>  
+function gotoMenu() {
+    window.location.href = "menu.html";
+}
+function goTosub11() {
+    window.location.href = "sub21.html";
+}
+function goTosub2() {
+    window.location.href = "sub2.html";
+}
+
+const content = [
+    {
+        title: "",
+        text: "מותו של חייל מהווה נקודת מפנה בשגרת היום - יום של היחידה ומעמיד אותך - המפקד בפני קשת של התמודדויות שיתכן ואינן מוכרות לך, במיוחד אם לא התנסית באובדן חייל קודם לכן."
+    },
+    {
+        title: "",
+        text: "המשימה שעומדת בפני המפקד היא לשלב בין הצורך לאפשר לחיילים לבטא את הרגשות המלווים את האירוע לבין החזרה לשגרה - כמה שיותר מהר!"
+    },
+    {
+        title: "",
+        text: "ישנה משמעות רבה לנסיבות המוות, לסוג ולאומי הפגיעה. אלה קובעים לא במעט את תפיסת האירוע על ידי מפקדים וחיילים, אתעוצמת התגובה המידית ואת דפוסי ההתמודדות. (קשת התגובות באירוע מוות: חרדה, האשמות, רגשות אשם, כעסים וכו')"
+    },
+    {
+        title: "מיד לאחר האירוע:",
+        text: "יש לרכז את החיילים סמוך ככל האפשר לאירוע וששוחח עימם על שני נושאים:\n 1) עובדות ומתן אינפורמציה - כאשר קורה אירוע שיש בו נפגע או מספר נשפעים ישאף כל חייל ביחידה להשיג אינפורמציה כדי לדעת מה קורה."
+    },
+    {
+        title: "מיד לאחר האירוע:",
+        text: "ככל שסיבת האירוע מעורפלת יותר, כך קיים יותר צורך במידע. בהעדרו- ניתן לצפות לתגובות של עמימות וחוסר וודאות כמו שמועות והשערות לא מבוססות. \n יש לשים לב ודגש על עובדות ולא על פירושים!"
+    },
+    {
+        title: "מיד לאחר האירוע:",
+        text: " באם מתנהלת חקירה יש להבהיר לחיילים עד כמה חשוב שלא להעביר למשפחה אינפורמציה לא מדויקת שעלולה להתברר כלא נכונה. בכל מקרה, התמודדות עם עובדות גם אם קשות - קלה יותר מהמתמודדות עם אי ודאות."
+    },
+    {
+        title: "מיד לאחר האירוע:",
+        text: "2) רגשות- חשוב להוביל את השיחה עם החיילים ולאפשר להם להביע רגשות וכאב בעקבות האובדן. קיימת משמעות להכלת הרגשות ומתן לגיטימציה - כי משהו קרה ביחידה. זאת, תוך העברת מסר ברור של חזרה לשגרה במהירות. "
+    },
+    {
+        title: "אם המפקד לא מצליח להתפנות מיד לאחר האירוע לשיחת החיילים יש לדאוג שקצין אחר יקיים אותה במקומך.",
+        text: ""
+    },
+    {
+        title: "ביקורי חיילי היחידה בבית המשפחה השכולה:",
+        text: "ישנה חשיבות רבה לכך שחיילי היחידה יבקרו אצל המשפחה השכולה. המשפחה מצפה להם וזקוקה למפגש איתם. על המפקד בשיתוף עם קצינת הנפגעים להכינם ולהדריך אותם לקראת הכניסה למשפחה."
+    },
+     {
+        title: "הנחה מפגשים בקבוצות",
+        text: "מומלץ למסד ולווסת את הביקורים וכאמור לשולחם בקבוצות, כך יהיה להם יותר קל להתמודד במעמד קשה זה. אם ניתן יש לצוות מפקד לקבוצה."
+    },
+    {
+        title: "שיתוף החברים לאחר הביקור",
+        text: " חשוב שחייל שביקר את המשפחה, יספר לאחרים על תגובות המשפחה וציפיותיה מן הביקור."
+    },
+    {
+        title: "העברת מסרים ומידע למשפחה",
+        text: "תדרך את החיילים כי יש לספר לשמפחת החלל רק מה שהם יודעים בבירור מוחלט."
+    },
+    {
+        title: "קשר לאורך זמן",
+        text: "עודד את החיילים להמשיך את הקשר עם המשפחות גם לאחר שחרורם מצהל ובעיקר באזכרות."
+    },
+    
+ ]
+
+
+let currentIndex = 0;
+
+const titleEl = document.getElementById("boxTitle");
+const textEl = document.getElementById("boxText");
+const forwardBtn = document.querySelector(".forword");
+const backBtn = document.querySelector(".back");
+
+// פונקציה שמעדכנת תצוגה
+function updateContent() {
+    titleEl.innerText = content[currentIndex].title;
+    textEl.innerText = content[currentIndex].text;
+
+    // הסתרת כפתורים בקצוות
+    backBtn.style.display = currentIndex === 0 ? "none" : "block";
+    forwardBtn.style.display = currentIndex === content.length - 1 ? "none" : "block";
+}
+
+// כפתור קדימה
+forwardBtn.addEventListener("click", () => {
+    if (currentIndex < content.length - 1) {
+        currentIndex++;
+        updateContent();
+    }
+});
+
+// כפתור אחורה
+backBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateContent();
+    }
+});
+
+// התחלה
+updateContent();
+</script> 
+</html>
+

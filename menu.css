@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/background/allPageBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    direction: ltr;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none; /* מוסתר כברירת מחדל */
+
+    background: rgba(0, 0, 0, 0.6); /* החשכה מאחור */
+    z-index: 999999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popUp.active {
+    display: block;
+}
+.backgroundPopUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000000;
+
+    width: 70vw;
+    max-height: 80vh;
+
+    transform: translate(-50%, -50%);
+}
+
+.closeBtn {
+   position: absolute;
+    top: 70%;
+    left: 40%;
+    z-index: 100000000;
+    width: 50vw;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+
+.buttonSub1 {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub1:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub1:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonSub1 img {
+    width: 50vw;
+}
+
+.buttonSub2 {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub2:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub2:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonSub2 img {
+    width: 50vw;
+}
+
+.buttonSub3 {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub3:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub3:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonSub3 img {
+    width: 50vw;
+}
+
+.buttonSub4 {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub4:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub4:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonSub4 img {
+    width: 50vw;
+}
+.buttonSub5 {
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    right: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub5:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub5:active {
+    transform: translateY(-50%) scale(0.95);
+}
+.buttonSub5 img {
+    width: 50vw;
+}
+.buttonSub6 {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.buttonSub6:hover {
+    transform: translateY(-50%) scale(1.1); /* 👈 שמרנו על Y */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.buttonSub6:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonSub6 img {
+    width: 50vw;
+}

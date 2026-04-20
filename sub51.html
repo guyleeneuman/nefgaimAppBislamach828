@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פקל נפגעים למפקד-חטיבת ביסלח</title>
+  <link rel="stylesheet" href="subs.css">
+</head>
+<body>
+    <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
+    <img class="title" src="assets/elements/sub51.png" alt="icon 1">
+    
+    <div class="infoBox">
+            <div class="choiceButtons"></div>
+     <h2 id="boxTitle"></h2>
+     <p id="boxText"></p>
+    </div>
+
+
+     <img class="forword" src="assets/buttons/forword.png" alt="icon 1">
+    <img class="back" src="assets/buttons/back.png" alt="icon 1">
+
+       <div class="toSub" onclick="goTosub5()">
+    <img src="assets/buttons/backTosSub5.png" alt="start button">
+  </div>
+      <div class="toMenu" onclick="gotoMenu()">
+    <img src="assets/buttons/toMenu.png" alt="start button">
+  </div>
+
+</body>
+<script>  
+function gotoMenu() {
+    window.location.href = "menu.html";
+}
+function goTosub11() {
+    window.location.href = "sub21.html";
+}
+function goTosub5() {
+    window.location.href = "sub5.html";
+}
+const choiceContainer = document.querySelector(".choiceButtons");
+
+const content = [
+    {
+        title: "דגשים נוספים:",
+        text: "1) עם קבלת הדיווח יחידת מצח תבצע פעולות לאיתור החייל בהתאם להוראות המקצועיות בנושא.\n 2) במקביל להעברת הדיווח, באחריות היחידה לבצע חיפושים ראשוניים וסריקות ביחידה בהנחיית מפקד מצח."
+    },
+    {
+        title: "דגשים נוספים:",
+        text: "3) במידה ובן משפחה מגיע לזירת האירוע יש למנות מפקד מלווה לאורך שהותם בשטח ודאגה לצרכיהם ושיקוף תמונת המצב בנוגע לחיפושים.\n "
+    },
+    {
+        title: "דגשים נוספים:",
+        text: "4) מפקד בדרגת סאל ומעלה יהווה גורם מתכלל לריכוז מאמצי האיתור מטעם היחידה וימצא פיזית בשטח הרלוונטי.\n 5)הקמת חמל לניהול האירוע ביחידה. \n 6) תדרוך מפקדים בחידה אודות האירוע על ידי מפקד היחידה."
+    },
+    {
+        title: "דגשים נוספים:",
+        text: "7)מפקדו של החייל יקיים שיחת טלפון עם משפחת החייל עפי רישומי היחידה ובהתאם לנוהל המצורף ובהתאם להנחיות חמל נפגעים ומצח."
+    },
+    {
+        title: "דגשים נוספים:",
+        text: "8)יש לתעד בכתב את כלל סדר הפעולות שננקטו במסגרת היחידה באופן מפורט ביומן מבצעים ייעודי לכך."
+    },
+    {
+        title: "",
+        text: ""
+    },
+    {
+        title: "",
+        text: ""
+    },
+    {
+        title: "נוצר קשר עם החייל:",
+        text: "המשך בנוהל נפקדים."
+    },
+    {
+        title: "לא נוצר קשר עם החייל:",
+        text: "בירור ראשוני על ידי מפקד היחידה או דאם מטעמו: \n 1)בירור תנועות אחרונות של החייל וסריקות במקום בו נראה לאחרונה. \n 2) בירור עם כלל הגורמים- תש ברהן מפקדים."
+    },
+    {
+        title: "לא נוצר קשר עם החייל:",
+        text: "3) בדיקת ציודו האישי לרבות נשק,ף רשתות חברץיות ועוד. \n 4) בדיקת חפתיו האישיים של החייל. "
+    },
+    {
+        title: "לא נוצר קשר עם החייל:",
+        text: ""
+    },
+    {
+        title: "נמצא עד שעתיים ממועד ההתייצבות:",
+        text: "תחקור בראשות מפקד היחידה ונקיטת אמצעים מתאימים / הפניה לגורמים רלוונטים."
+    },
+    {
+        title: "אינו נמצא שעתיים ממועד ההתייצבות:",
+        text: "דיווח מיידי לגורמים הבאים: \n 1) מפקדת החטיבה: מחט, קמשח, ק. נפגעים \n 2) דיווח לחמל נפגעים 03-6755000  \n 3) דיווח לבסיס מצח שברשותו נמצאת היחידה."
+    },
+    {
+        title: "אינו נמצא שעתיים ממועד ההתייצבות:",
+        text: "המשך ביצוע פעולות בהתאם להנחיות מצח וחמל נפגעים"
+    },
+    {
+        title: "חשד לסיבות אובדניות / מסכנות חיים:",
+        text: "דיווח מיידי לגורמים הבאים: \n 1) מפקדת החטיבה: מחט, קמשח, ק. נפגעים \n 2) דיווח לחמל נפגעים 03-6755000  \n 3) דיווח לבסיס מצח שברשותו נמצאת היחידה."
+    },
+    {
+        title: "חשד לסיבות אובדניות / מסכנות חיים:",
+        text: "המשך ביצוע פעולות בהתאם להנחיות מצח וחמל נפגעים"
+    },
+
+ ]
+
+ const buttonsPerPage = {
+    5: [
+        { text: "חשד לנפקדות", goTo: 6 },
+        { text: "חשד לסיבות אובדניות / מסכנות חיים", goTo: 14 }
+    ],
+    6: [
+        { text: "נוצר קשר עם החייל", goTo: 7 },
+        { text: "לא נוצר קשר עם החייל", goTo: 8 }
+    ],
+    10: [
+        { text: "נמצא עד שעתיים ממועד ההתייצבות", goTo: 11 },
+        { text: "אינו נמצא שעתיים ממועד ההתייצבות", goTo: 12}
+    ]
+};
+let currentIndex = 0;
+
+const titleEl = document.getElementById("boxTitle");
+const textEl = document.getElementById("boxText");
+const forwardBtn = document.querySelector(".forword");
+const backBtn = document.querySelector(".back");
+
+function createChoiceButtons(pageIndex) {
+    choiceContainer.innerHTML = "";
+
+    const buttonsData = buttonsPerPage[pageIndex];
+
+    buttonsData.forEach(btn => {
+        const button = document.createElement("button");
+        button.innerText = btn.text;
+
+        button.addEventListener("click", () => {
+            currentIndex = btn.goTo;
+            updateContent();
+        });
+
+        choiceContainer.appendChild(button);
+    });
+}
+// פונקציה שמעדכנת תצוגה
+function updateContent() {
+    titleEl.innerText = content[currentIndex].title;
+    textEl.innerText = content[currentIndex].text;
+
+    // כפתורי ניווט
+    backBtn.style.display = currentIndex === 0 ? "none" : "block";
+    forwardBtn.style.display = currentIndex === content.length - 1 ? "none" : "block";
+
+if (buttonsPerPage[currentIndex]) {
+    choiceContainer.style.display = "flex";
+    createChoiceButtons(currentIndex);
+} else {
+    choiceContainer.style.display = "none";
+}
+ }
+// כפתור קדימה
+forwardBtn.addEventListener("click", () => {
+    if (currentIndex < content.length - 1) {
+        currentIndex++;
+        updateContent();
+    }
+});
+
+// כפתור אחורה
+backBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateContent();
+    }
+});
+
+// התחלה
+updateContent();
+
+</script> 
+<style> 
+    .choiceButtons {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.choiceButtons button {
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "secular";
+    background-color: #FFEEB5;
+    color: #6A5901;
+    font-size: 1.2rem;
+}
+</style>
+</html>
+

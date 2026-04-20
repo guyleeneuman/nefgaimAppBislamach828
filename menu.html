@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פקל נפגעים למפקד-חטיבת ביסלח</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
+    <img class="title" src="assets/elements/menuTitle.png" alt="icon 1">
+
+    <div class="buttonSub1" onclick="goToSub1()">
+    <img src="assets/buttons/sub1Title.png" alt="start button">
+  </div>
+    <div class="buttonSub2" onclick="goToSub2()">
+    <img src="assets/buttons/sub2Title.png" alt="start button">
+  </div>
+      <div class="buttonSub3" onclick="goToSub3()">
+    <img src="assets/buttons/sub3Title.png" alt="start button">
+  </div>
+      <div class="buttonSub4" onclick="goToSub4()">
+    <img src="assets/buttons/sub4Title.png" alt="start button">
+  </div>
+      <div class="buttonSub5" onclick="goToSub5()">
+    <img src="assets/buttons/sub5Title.png.png" alt="start button">
+  </div>
+      <div class="buttonSub6" onclick="goToSub6()">
+    <img src="assets/buttons/sub6Title.png" alt="start button">
+  </div>
+  <div class="popUp">
+    <img class="backgroundPopUp" src="assets/elements/popUpBackground.png" alt="start button">
+    <img class="closeBtn" src="assets/elements/popUpCloseBtn.png" alt="start button">
+  </div>
+
+</body>
+<script>  
+function goMenu() {
+    window.location.href = "menu.html";
+}
+function goToSub1() {
+    window.location.href = "sub1.html";
+}
+function goToSub2() {
+    window.location.href = "sub2.html";
+}
+function goToSub3() {
+    window.location.href = "sub3.html";
+}
+function goToSub4() {
+    window.location.href = "sub4.html";
+}
+function goToSub5() {
+    window.location.href = "sub5.html";
+}
+function goToSub6() {
+    window.location.href = "sub6.html";
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".popUp");
+    const closeBtn = document.querySelector(".closeBtn");
+
+    // אם כבר נסגר פעם אחת → לא להציג בכלל
+    const seenPopup = sessionStorage.getItem("seenPopup");
+
+    if (seenPopup === "true") {
+        return; // יוצא ולא מציג פופאפ
+    }
+
+    // הצגה ראשונית
+    popUp.classList.add("active");
+
+    // סגירה
+    closeBtn.addEventListener("click", () => {
+        popUp.classList.remove("active");
+
+        // שמירה שלא יוצג שוב
+        sessionStorage.setItem("seenPopup", "true");
+    });
+});
+</script> 
+</html>

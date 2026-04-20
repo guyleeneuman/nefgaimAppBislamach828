@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פקל נפגעים למפקד-חטיבת ביסלח</title>
+  <link rel="stylesheet" href="subs.css">
+</head>
+<body>
+    <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
+    <img class="title" src="assets/elements/sub11.png" alt="icon 1">
+    <div class="infoBox">
+     <h2 id="boxTitle"></h2>
+     <p id="boxText"></p>
+    </div>
+
+
+     <img class="forword" src="assets/buttons/forword.png" alt="icon 1">
+    <img class="back" src="assets/buttons/back.png" alt="icon 1">
+
+       <!-- <div class="toSub" onclick="goTosub2()">
+    <img src="assets/buttons/backToSub2.png" alt="start button">
+  </div> -->
+      <div class="toMenu" onclick="gotoMenu()">
+    <img src="assets/buttons/toMenu.png" alt="start button">
+  </div>
+
+</body>
+<script>  
+function gotoMenu() {
+    window.location.href = "menu.html";
+}
+function goTosub11() {
+    window.location.href = "sub21.html";
+}
+function goTosub2() {
+    window.location.href = "sub2.html";
+}
+
+const content = [
+    {
+        title: "משרת באשפוז, מצב קשה עד אנוש:",
+        text: "פקודת ביקור: מיידי ועד 48 שעות ממועד האשפוז, לאחר מכן פעמיים בשבוע למשך החודש הראשון ולאחר חודש- פעם בשבוע. "
+    },
+    {
+        title: "משרת באשפוז, מצב קשה עד אנוש:",
+        text: "מי מבקר: ביקור ראשון- מפקד היחידה/מפקד ישיר. ביקור שני- מפקד ישיר או נציג היחידה בדרגת כתף ומעלה."
+    },
+    {
+        title: "משרת באשפוז, מצב בינוני:",
+        text: "פקודת ביקור: ביקור ראשון עד שלושה ימים ממועד האשפוז ולאחר מכן ביקור פעם בשבוע עד תום האשפוז.\n מי מבקר: ביקור ראשון- מפקד ישיר- קצין/נגד. ביקור שני והלאה- מפקד ישיר או קצין מהיחידה בדרגת כתף בלבד."
+    },
+    {
+        title: "משרת באשפוז, מצב קל:",
+        text: "פקודת ביקור: ביקור ראשון עד חמישה ימים ממועד האשפוז ולאחר מכן ביקור אחת לשבוע עד לתום האשפוז.\n  מי מבקר: ביקור ראשון- מפקד ישיר- קצין/נגד. ביקור שני ולהאה- איש קבע מטעם היחידה. "
+    },
+    {
+        title: "משרת באשפוז, חייל אומ מאושפז במצב קל:",
+        text: "פקודת ביקורים: יצירת קשר טלפוני מיידי, ביקור ראשון תוך שלושה ימים ממועד האשפוז ולאחר מכן אחת לשבוע עד תום האשפוז."
+    },
+    {
+        title: "משרת באשפוז, חייל אומ מאושפז במצב קל:",
+        text: "מי מבקר: ביקור ראשון- מפקד ישיר- קצין /נגד ביקור שני והלאה- איש קבע מטעם היחידה."
+    },
+{
+        title: "משרת באשפוז, שנפצע בפעילות מבצעית/ תאונת אימונים:",
+        text: "פקודת ביקורים: ביקור ראשון מיידי, ביקור שני תוך שלושה ימים ולאחר מכן ביקור אחת לשבוע."
+    },
+{
+        title: "משרת באשפוז, שנפצע בפעילות מבצעית / תאונת אימונים:",
+        text: "מי מבקר: ביקור ראשון- מפקד ישיר או נציג מטעם היחידה בדרגת כתף בלבד."
+    },
+{
+        title: "משרת באשפוז, שנפצע בפעילות מבצעית / תאונת אימונים:",
+        text: "    ביקור שני-מפקד היחידה/מפקד ישיר ביקור שלישי והלאה- מפקד ישיר או נציג מהיחידה בדרגת כתף בלבד."
+    },
+    {
+        title: "חופשת מחלה, משרת השוהה בביתו:",
+        text: "פקודת ביקורים: ביקור ראשון תוך 10 ימים מתחילת חופשת המחלה ביקור שני תוך 14 ימים ממועד הביקור הראשון. ביקור שלישי והלאה- אחת ל21 יום ובמקביל שיחת טלפון אחת ל10 ימים ממפקד ימשיר."
+    },
+      {
+        title: "חופשת מחלה, משרת השוהה בביתו:",
+        text: "מי מבקר: ביקור ראשון- מפקד ישיר - קצין/נגד ביקור שני והלאה- נציג מטעם היחידה."
+    },
+    {
+        title: "חופשת מחלה, חייל אומ השוהה בביתו:",
+        text: "פקודת ביקורים: יצירת קשר טלפוני מיידי, ביקור ראשון עד 4 ימים מיום תחילת חופשת המחלה ולאחר מכן ביקור אחת לשבוע."
+    },
+    {
+        title: "חופשת מחלה, חייל אומ השוהה בביתו:",
+        text: "מי מבקר: ביקור ראשון- מפקד היחידה/ מפקד ישיר יקור שני והלאה- נציג מטעם היחידה."
+    },
+    {
+        title: "חייל אומ:",
+        text: "אוכלוסייה מיוחדת: כגון חייל בודד, אינדיקציית שכול, נפגע פעולות איבה, עולה חדש,בעל צרכים מיוחדים,מקאמ, מצוקה כללית וכיוב."
+    },
+ ]
+
+let currentIndex = 0;
+
+const titleEl = document.getElementById("boxTitle");
+const textEl = document.getElementById("boxText");
+const forwardBtn = document.querySelector(".forword");
+const backBtn = document.querySelector(".back");
+
+// פונקציה שמעדכנת תצוגה
+function updateContent() {
+    titleEl.innerText = content[currentIndex].title;
+    textEl.innerText = content[currentIndex].text;
+
+    // הסתרת כפתורים בקצוות
+    backBtn.style.display = currentIndex === 0 ? "none" : "block";
+    forwardBtn.style.display = currentIndex === content.length - 1 ? "none" : "block";
+}
+
+// כפתור קדימה
+forwardBtn.addEventListener("click", () => {
+    if (currentIndex < content.length - 1) {
+        currentIndex++;
+        updateContent();
+    }
+});
+
+// כפתור אחורה
+backBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateContent();
+    }
+});
+
+// התחלה
+updateContent();
+</script> 
+</html>
+

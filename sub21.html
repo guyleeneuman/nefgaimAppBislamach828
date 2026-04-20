@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פקל נפגעים למפקד-חטיבת ביסלח</title>
+  <link rel="stylesheet" href="subs.css">
+</head>
+<body>
+    <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
+    <img class="title" src="assets/elements/sub21.png" alt="icon 1">
+    <div class="infoBox">
+     <h2 id="boxTitle"></h2>
+     <p id="boxText"></p>
+    </div>
+
+
+     <img class="forword" src="assets/buttons/forword.png" alt="icon 1">
+    <img class="back" src="assets/buttons/back.png" alt="icon 1">
+
+       <div class="toSub" onclick="goTosub2()">
+    <img src="assets/buttons/backToSub2.png" alt="start button">
+  </div>
+      <div class="toMenu" onclick="gotoMenu()">
+    <img src="assets/buttons/toMenu.png" alt="start button">
+  </div>
+
+</body>
+<script>  
+function gotoMenu() {
+    window.location.href = "menu.html";
+}
+function goTosub11() {
+    window.location.href = "sub21.html";
+}
+function goTosub2() {
+    window.location.href = "sub2.html";
+}
+
+const content = [
+    {
+        title: "ציר דיווחים:",
+        text: "1) מפקד יחידה- מחט ורמד נפגעים \n 2) דיווח לחמל נפגעים 03-6755000"
+    },
+    {
+        title: "סדר פעולות:",
+        text: "1) קביעת מוות על ידי רופא בלבד- יש לעדכנו במיידי.\n 2) דיווח ראשוני- מפקדים, נפגעים ומצח.\n 3)  ריכוז כלל חפצי החלל (אזרחיים וצבאיים) ומסמכים ורישומם בטופס הייעודי לכך."
+    },
+    {
+        title: "סדר פעולות:",
+        text: "4) שיח עם משרתי היחידה – רק לאחר העברת המידע למשפחה! יש לרכז את החיילים, אין להעביר מידע בווצאפ או למסור מידע למשפחת החלל או לקרוביו. \n 5) קיום לוויה צבאית."
+    },
+    {
+        title: "סדר פעולות:",
+        text: "5) השתתפות בשבעה. \n 6) קיום אזכרות (שבעה, 30, שנה, שנתית)."
+    },
+    {
+        title: "תפקיד המפקד:",
+        text: "1) כניסה ראשונית לבית המשפחה ומתן מידע ראשוני אודות האירוע בהתאם להוראות זירת הנפגעים. \n2) כתיבת הספד ללוויה. \n 3) השתתפות בלוויה. "
+    },
+    {
+        title: "תפקיד המפקד:",
+        text: "  4) ביקור במהלך השבעה. \n 5) השתתפות באזכרות."
+    },
+    {
+        title: "תפקיד איש המשאן:",
+        text: "1) ריכוז חפצי החייל- ריכוז חפציו האישיים של החלל וריכוז המידע על גבי טופס 245. העברת הטספים לחמל הנפגעים עד לשבוע ממועד נפילת החייל.\n 2) שיח שוטף למול חמל הנפגעים בהכנות להלוויה. "
+    },
+    {
+        title: "תפקיד איש המשאן:",
+        text: "3) העברת קורות חיים אודות החלל בשיתוף המפקדים לטובת הכנת מסמך מטעם הרמטכל."
+    },
+ ]
+
+
+let currentIndex = 0;
+
+const titleEl = document.getElementById("boxTitle");
+const textEl = document.getElementById("boxText");
+const forwardBtn = document.querySelector(".forword");
+const backBtn = document.querySelector(".back");
+
+// פונקציה שמעדכנת תצוגה
+function updateContent() {
+    titleEl.innerText = content[currentIndex].title;
+    textEl.innerText = content[currentIndex].text;
+
+    // הסתרת כפתורים בקצוות
+    backBtn.style.display = currentIndex === 0 ? "none" : "block";
+    forwardBtn.style.display = currentIndex === content.length - 1 ? "none" : "block";
+}
+
+// כפתור קדימה
+forwardBtn.addEventListener("click", () => {
+    if (currentIndex < content.length - 1) {
+        currentIndex++;
+        updateContent();
+    }
+});
+
+// כפתור אחורה
+backBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateContent();
+    }
+});
+
+// התחלה
+updateContent();
+</script> 
+</html>
+
