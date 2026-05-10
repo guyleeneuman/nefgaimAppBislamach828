@@ -10,6 +10,7 @@
     <img class="navbar" src="assets/logos/logos.png" alt="icon 1">
     <img class="title" src="assets/elements/sub23.png" alt="icon 1">
     <div class="infoBox">
+        <div class="choiceButtons"></div>
      <h2 id="boxTitle"></h2>
      <p id="boxText"></p>
     </div>
@@ -36,6 +37,7 @@ function goTosub11() {
 function goTosub2() {
     window.location.href = "sub2.html";
 }
+const choiceContainer = document.querySelector(".choiceButtons");
 
 const content = [
     {
@@ -49,6 +51,10 @@ const content = [
     {
         title: "",
         text: "ישנה משמעות רבה לנסיבות המוות, לסוג ולאומי הפגיעה. אלה קובעים לא במעט את תפיסת האירוע על ידי מפקדים וחיילים, את עוצמת התגובה המידית ואת דפוסי ההתמודדות. (קשת התגובות באירוע מוות: חרדה, האשמות, רגשות אשם, כעסים וכו')"
+    },
+    {
+        title: "",
+        text: ""
     },
     {
         title: "מיד לאחר האירוע:",
@@ -94,6 +100,7 @@ const content = [
  ]
 
 
+
 let currentIndex = 0;
 
 const titleEl = document.getElementById("boxTitle");
@@ -101,14 +108,46 @@ const textEl = document.getElementById("boxText");
 const forwardBtn = document.querySelector(".forword");
 const backBtn = document.querySelector(".back");
 
+function createChoiceButtons() {
+    choiceContainer.innerHTML = "";
+
+    const buttonsData = [
+        { text: "מיד לאחר האירוע", goTo: 4 },
+        { text: "ביקורי המשפחה השכולה", goTo: 9 },
+        { text: "מפגשים בקבוצות", goTo: 10 },
+        { text: "שיתוף אחר הביקור", goTo: 11},
+        { text: "העברת מסרים למשפחה", goTo: 12 },
+        { text: "קשר לאורך זמן", goTo: 13 },
+    ];
+
+    buttonsData.forEach(btn => {
+        const button = document.createElement("button");
+        button.innerText = btn.text;
+
+        button.addEventListener("click", () => {
+            currentIndex = btn.goTo;
+            updateContent();
+        });
+
+        choiceContainer.appendChild(button);
+    });
+}
 // פונקציה שמעדכנת תצוגה
 function updateContent() {
     titleEl.innerText = content[currentIndex].title;
     textEl.innerText = content[currentIndex].text;
 
-    // הסתרת כפתורים בקצוות
+    // כפתורי ניווט
     backBtn.style.display = currentIndex === 0 ? "none" : "block";
     forwardBtn.style.display = currentIndex === content.length - 1 ? "none" : "block";
+
+    // 💥 הצגת כפתורים רק בטקסט השני
+    if (currentIndex === 3) {
+        choiceContainer.style.display = "flex";
+        createChoiceButtons();
+    } else {
+        choiceContainer.style.display = "none";
+    }
 }
 
 // כפתור קדימה
@@ -129,6 +168,7 @@ backBtn.addEventListener("click", () => {
 
 // התחלה
 updateContent();
+
 </script> 
 </html>
 
